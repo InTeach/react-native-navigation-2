@@ -30,7 +30,7 @@ class Navigator {
   _checkLastAction(params) {
     if (
       Date.now() - this._lastAction.timestamp < 1000 &&
-      _.isEqual(params, this._lastAction.params) &&
+      isEqual(params, this._lastAction.params) &&
       !params.force
     ) {
       return false;
