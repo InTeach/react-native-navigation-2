@@ -289,8 +289,8 @@ var Controllers = {
     dismissController: async function(animationType = 'slide-down') {
       return await RCCManager.dismissController(animationType);
     },
-    dismissAllControllers: function(animationType = 'slide-down') {
-      RCCManager.dismissAllControllers(animationType);
+    dismissAllControllers: async function(animationType = 'slide-down') {
+      return await RCCManager.dismissAllControllers(animationType);
     }
   },
 
